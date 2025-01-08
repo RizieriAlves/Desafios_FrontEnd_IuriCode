@@ -1,8 +1,7 @@
 import Card from "../Card/Card";
 import "./CardContainer.css";
-
 const CardContainer = () => {
-  const posts = [
+  const post_list = [
     {
       date: "2024-10-07",
       title: "O que é linguagem de programação? Conheça as principais",
@@ -25,13 +24,7 @@ const CardContainer = () => {
 
   return (
     <div className="cardContainer">
-      {posts.length > 0 ? (
-        posts.map((post, i) => {
-          return <Card data={post} key={i} />;
-        })
-      ) : (
-        <h1>Sem posts no momento!</h1>
-      )}
+      <Card post_list={post_list} />
     </div>
   );
 };

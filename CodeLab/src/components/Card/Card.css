@@ -19,6 +19,7 @@
 }
 .heart {
   color: #e07b67;
+  cursor: pointer;
   font-size: 32px;
 }
 
