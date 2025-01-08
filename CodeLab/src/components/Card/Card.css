@@ -1,0 +1,40 @@
+.card {
+  background-color: #17171a;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 1216px;
+}
+.container_Date_Heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardDate {
+  color: #e07b67;
+  size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.heart {
+  color: #e07b67;
+  font-size: 32px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 32px;
+  gap: 16px;
+}
+.cardTitle {
+  font-size: 24px;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.cardText {
+  font-size: 20px;
+  color: #afabb6;
+  font-family: "Inter", sans-serif;
+}

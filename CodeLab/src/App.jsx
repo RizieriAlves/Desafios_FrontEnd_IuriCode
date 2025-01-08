@@ -1,5 +1,6 @@
 import "./App.css";
 import CardContainer from "./components/CardContainer/CardContainer";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 function App() {
   return (
