@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 1216px;
+  width: 100%;
+  max-width: 1216px;
 }
 .container_Date_Heart {
   display: flex;
@@ -37,4 +38,41 @@
   font-size: 20px;
   color: #afabb6;
   font-family: "Inter", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    gap: 24px;
+    width: 100%;
+  }
+  .cardDate {
+    font-size: 14px;
+  }
+  .cardTitle {
+    font-size: 20px;
+  }
+  .cardText {
+    font-size: 16px;
+    line-height: 26.5px;
+  }
+  .heart {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    gap: 20px;
+    padding: 32px 24px;
+  }
+  .cardDate {
+    font-size: 12px;
+  }
+  .heart {
+    font-size: 20px;
+  }
+
+  .cardText {
+    line-height: 22.4px;
+  }
 }
