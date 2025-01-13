@@ -1,0 +1,56 @@
+@use "variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 30%;
+  min-height: 326px;
+
+  @include variables.tablet {
+    min-width: 336px;
+    flex-grow: 1;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  @include variables.mobile {
+    width: 319px;
+  }
+
+  &-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    background-color: variables.$dark-20;
+  }
+  .product-info-texts {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+
+    .product-title {
+      font-size: 18px;
+      line-height: 23.4px;
+      font-weight: 500;
+
+      @include variables.mobile {
+        font-size: 16px;
+        line-height: 20.8px;
+      }
+    }
+    .product-category {
+      font-size: 16px;
+      color: variables.$brand-color;
+    }
+  }
+  .price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25.52px;
+    color: variables.$dark-10;
+    font-family: "Space Grotesk";
+  }
+}

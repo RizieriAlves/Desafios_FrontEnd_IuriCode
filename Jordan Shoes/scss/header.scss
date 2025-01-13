@@ -1,0 +1,31 @@
+@use "variables";
+
+header {
+  background-color: variables.$dark-20;
+  color: variables.$dark-10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 19px 0;
+
+  @include variables.tablet {
+    padding: 12px 0;
+  }
+
+  & span {
+    text-align: center;
+    font-size: 24px;
+    line-height: 26.11px;
+
+    @include variables.tablet {
+      font-size: 16px;
+      line-height: 17.41px;
+    }
+
+    @include variables.mobile {
+      font-size: 14px;
+      line-height: 15.23px;
+    }
+  }
+}

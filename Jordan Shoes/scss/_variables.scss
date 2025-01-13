@@ -1,0 +1,17 @@
+$brand-color: #7ca2f4;
+$dark-10: #121214;
+$dark-20: #f3f7ff;
+$dark-30: #ffffff;
+$font: "Archivo";
+$left-margin-desktop: 352px;
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 375px) {
+    @content;
+  }
+}

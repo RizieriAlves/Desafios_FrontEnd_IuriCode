@@ -1,0 +1,87 @@
+@use "variables";
+
+.banner {
+  background-image: url("../images/banner1.png");
+  width: 100%;
+  height: 400px;
+
+  @include variables.tablet {
+    height: 350px;
+    background-image: url("../images/banner2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @include variables.mobile {
+    background-image: url("../images/banner3.png");
+  }
+
+  &-content {
+    color: variables.$dark-30;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    height: 100%;
+    max-width: 557px;
+    margin-left: 18.33%;
+
+    @include variables.tablet {
+      margin-left: 32px;
+    }
+
+    @include variables.mobile {
+      margin-left: 24px;
+      width: 328px;
+    }
+  }
+
+  &-title {
+    font-size: 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    @include variables.tablet {
+      font-size: 18px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &-content-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    gap: 20px;
+    line-height: 33.6px;
+    font-weight: 400;
+
+    @include variables.tablet {
+      gap: 12px;
+      line-height: 26.11px;
+    }
+  }
+  &-subtitle {
+    font-size: 32px;
+
+    @include variables.tablet {
+      font-size: 24px;
+    }
+  }
+
+  &-text {
+    font-size: 24px;
+
+    @include variables.tablet {
+      font-size: 18px;
+    }
+
+    @include variables.mobile {
+      font-size: 16px;
+    }
+  }
+}
