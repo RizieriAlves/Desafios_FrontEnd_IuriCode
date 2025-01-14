@@ -34,3 +34,22 @@
     min-width: 335px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .article {
+    width: 100%;
+
+    &-content {
+      padding: 24px 18px;
+    }
+    &-title {
+      font-size: 18px;
+      line-height: 23.4px;
+    }
+
+    &-text {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
