@@ -1,5 +1,5 @@
 import "../scss/header.scss";
-import headerimage from "../images/headerimage.png";
+
 const Header = () => {
   return (
     <div className="header">
@@ -15,7 +15,10 @@ const Header = () => {
           </span>
           <button className="header-text-button">BUSCAR ARTIGOS</button>
         </div>
-        <img src={headerimage} alt="Pessoa feliz no computador" />
+        <img
+          src="../../images/headerimage.png"
+          alt="Pessoa feliz no computador"
+        />
       </div>
     </div>
   );
