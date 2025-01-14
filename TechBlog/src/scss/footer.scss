@@ -41,5 +41,37 @@
     textarea {
       height: 150px;
     }
+    button {
+      background-color: variables.$brand-color;
+      width: 100%;
+      color: variables.$dark-60;
+      padding: 14px 32px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18.75px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+
+    padding: 80px 32px;
+
+    &-content {
+      max-width: 704px;
+      margin: auto;
+      align-items: flex-start;
+      span {
+        font-size: 28px;
+        text-align: left;
+        line-height: 32.81px;
+      }
+    }
+    &-inputs {
+      gap: 40px;
+    }
   }
 }

@@ -9,6 +9,7 @@ const Footer = () => {
           <input type="text" placeholder="Nome" />
           <input type="text" placeholder="Email" />
           <textarea placeholder="Assunto da mensagem" />
+          <button>Entrar em contato</button>
         </div>
       </div>
     </div>
