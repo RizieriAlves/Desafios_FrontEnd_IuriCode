@@ -28,3 +28,9 @@
     color: variables.$dark-10;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .article {
+    min-width: 335px;
+  }
+}

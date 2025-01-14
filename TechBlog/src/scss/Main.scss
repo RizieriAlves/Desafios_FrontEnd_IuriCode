@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 80px 0px;
 
   &-content {
@@ -24,7 +23,20 @@
       flex-direction: row;
       gap: 32px;
       flex-wrap: wrap;
-      width: 1216px;
+      max-width: 1216px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    &-content {
+      width: 704px;
+      gap: 56px;
+      align-items: center;
+      &-articles {
+        justify-content: center;
+      }
     }
   }
 }
