@@ -75,3 +75,27 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .footer {
+    padding: 64px 0px;
+
+    &-content {
+      width: 326px;
+      span {
+        font-size: 28px;
+        line-height: 32.81px;
+      }
+    }
+
+    &-inputs {
+      font-size: 14px;
+      line-height: 16.41px;
+      gap: 24px;
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+  }
+}
