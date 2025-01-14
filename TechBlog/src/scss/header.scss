@@ -7,9 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px 352px;
+
+  padding: 50px 0px;
 
   &-content {
+    max-width: 1216px;
+    margin: auto;
     display: flex;
     gap: 235px;
     align-items: center;
@@ -46,6 +49,38 @@
       text-align: center;
       border: 2px solid black;
       border-radius: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 64px 109px;
+    height: auto;
+    &-content {
+      flex-direction: column-reverse;
+      gap: 24px;
+
+      img {
+        width: 330px;
+        height: 379.5px;
+      }
+    }
+
+    &-text {
+      gap: 24px;
+      text-align: center;
+      &-title {
+        font-size: 32px;
+        line-height: 38.4px;
+      }
+      &-subtitle {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      &-button {
+        margin: auto;
+      }
     }
   }
 }
