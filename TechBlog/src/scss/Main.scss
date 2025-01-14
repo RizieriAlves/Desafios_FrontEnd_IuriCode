@@ -4,9 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 80px 0px;
   &-content {
-    padding: 80px 0px;
     display: flex;
     flex-direction: column;
     gap: 113px;
@@ -31,6 +30,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
+    padding: 80px 32px;
     &-content {
       width: 704px;
       gap: 56px;
@@ -44,8 +44,8 @@
 
 @media screen and (max-width: 375px) {
   .container {
+    padding: 64px 24px;
     &-content {
-      padding: 64px 24px;
       width: 327px;
       gap: 40px;
 

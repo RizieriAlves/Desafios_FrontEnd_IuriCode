@@ -32,12 +32,19 @@
 @media screen and (max-width: 768px) {
   .article {
     min-width: 335px;
+    img {
+      width: 333px;
+    }
   }
 }
 
 @media screen and (max-width: 375px) {
   .article {
     width: 100%;
+
+    img {
+      width: 329px;
+    }
 
     &-content {
       padding: 24px 18px;
