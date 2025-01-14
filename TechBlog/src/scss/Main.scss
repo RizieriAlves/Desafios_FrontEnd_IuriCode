@@ -1,0 +1,29 @@
+@use "variables";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 80px 0px;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 113px;
+
+    &-title {
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 37.5px;
+      color: variables.$dark-10;
+    }
+
+    &-articles {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      width: 1216px;
+    }
+  }
+}
